@@ -1,13 +1,63 @@
-body {
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  width: 100%;
+  height: 100vh;
+  place-items: center;
+  display: grid;
+  background-color: rgba(197, 167, 110, 0.557);
+}
+
+.container {
+  background-color: #fff;
+  border-radius: 3px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container h2 {
+  margin-bottom: 10px;
+}
+
+.container input {
+  border-radius: 3px;
+  outline: none;
+  height: 40px;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  padding: 0 10px;
+  margin-bottom: 10px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.btns button {
+  margin-right: 7px;
+  font-size: 1rem;
+  padding: 8px 17px;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  text-transform: capitalize;
+  color: #fff;
+  opacity: .6;
+  cursor: pointer;
+  transition-duration: 300ms;
+}
+
+.btns button:first-child {
+  background-color: green;
+}
+
+.btns button:last-child {
+  background-color: blue;
+}
+
+.btns button:hover {
+  opacity: 1;
 }
